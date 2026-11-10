@@ -1,0 +1,1543 @@
+# MASTER PROMPT — BABATURAN
+## Babaturan Diajar Basa Sunda
+### AI-Powered Sundanese Learning, Translation & Conversation Companion for High School Students
+
+Bertindaklah sebagai tim ahli multidisiplin yang terdiri atas:
+1. Senior AI Application Architect.
+2. Expert Sundanese Language Educator.
+3. Instructional Designer dan Curriculum Specialist.
+4. NLP dan Conversational AI Engineer.
+5. Machine Translation Engineer.
+6. Gamification dan Game-Based Learning Designer.
+7. UI/UX Designer untuk aplikasi pendidikan.
+8. Full-Stack Web Developer.
+9. Educational Assessment Specialist.
+
+Tugas utama Anda adalah merancang dan membangun aplikasi web pembelajaran Bahasa Sunda bernama **BABATURAN — Babaturan Diajar Basa Sunda**.
+
+BABATURAN bukan hanya chatbot, tetapi ekosistem pembelajaran yang mengintegrasikan:
+- AI Tutor.
+- Multilingual Translator.
+- Conversation Simulator.
+- AI Writing Assistant.
+- Adaptive Learning.
+- Gamified Learning.
+- Sundanese Cultural Explorer.
+
+Aplikasi harus dapat membantu siswa menerjemahkan Bahasa Sunda, Bahasa Indonesia, dan Bahasa Inggris, memahami konteks penggunaan bahasa, berlatih percakapan, menyelesaikan tugas Bahasa Sunda, serta meningkatkan keterampilan menulis secara mandiri.
+
+Jangan hanya membuat konsep, desain statis, atau prototype yang tombolnya tidak berfungsi. Bangun aplikasi yang memiliki alur pembelajaran nyata, chatbot, penerjemah, sistem latihan, pengelolaan progres, dan pengalaman pengguna yang menarik.
+
+Jika layanan AI atau API eksternal belum memiliki konfigurasi, sediakan demo mode yang berfungsi dan jelaskan bagian yang masih memerlukan konfigurasi.
+
+---
+
+# 1. LATAR BELAKANG DAN MASALAH YANG INGIN DISELESAIKAN
+
+Aplikasi ini dikembangkan untuk mendukung pembelajaran Bahasa Sunda di jenjang SMA, dengan konteks awal implementasi di SMAN 2 Tambun Selatan, Kabupaten Bekasi, Jawa Barat.
+
+Karakteristik peserta didik:
+- Sebagian besar peserta didik bukan berasal dari keluarga atau lingkungan berbahasa Sunda.
+- Banyak peserta didik belum memahami kosakata dan struktur Bahasa Sunda.
+- Sebagian peserta didik memiliki latar belakang Sunda dan mampu memahami percakapan, tetapi belum berani atau belum terbiasa berbicara menggunakan Bahasa Sunda.
+- Sebagian peserta didik merasa takut salah menggunakan undak-usuk basa.
+- Peserta didik membutuhkan bantuan menerjemahkan Bahasa Indonesia ke Bahasa Sunda dan sebaliknya.
+- Peserta didik juga membutuhkan bantuan memahami teks, instruksi, dan materi Bahasa Sunda.
+- Siswa membutuhkan pendampingan dalam menyelesaikan tugas, tetapi tetap harus mengembangkan kemampuan berpikir dan menulis secara mandiri.
+
+Masalah utama bukan sekadar kurangnya pengetahuan Bahasa Sunda, melainkan juga adanya hambatan psikologis, keterbatasan kesempatan berlatih, perbedaan kemampuan awal, kesulitan menerjemahkan, serta kurangnya lingkungan praktik yang aman.
+
+**BABATURAN harus menjadi teman belajar yang membantu siswa memahami Bahasa Sunda, berani menggunakannya, dan mampu mengembangkan keterampilan berbahasa secara mandiri.**
+
+Aplikasi juga harus berkontribusi terhadap pelestarian Bahasa Sunda melalui penggunaan aktif bahasa dan pengenalan budaya.
+
+# 2. VISI, MISI, DAN TUJUAN APLIKASI
+
+## Visi
+
+Mewujudkan generasi muda yang mampu memahami, menerjemahkan, menggunakan, menghargai, dan melestarikan Bahasa Sunda melalui pengalaman pembelajaran yang personal, interaktif, menyenangkan, dan didukung kecerdasan buatan.
+
+## Misi
+
+1. Menghadirkan teman belajar Bahasa Sunda yang dapat diakses kapan saja.
+2. Menyediakan penerjemah Bahasa Sunda, Bahasa Indonesia, dan Bahasa Inggris.
+3. Menyediakan pembelajaran adaptif sesuai kemampuan awal peserta didik.
+4. Menciptakan ruang aman untuk berlatih percakapan tanpa takut salah.
+5. Membiasakan peserta didik menggunakan Bahasa Sunda secara aktif.
+6. Membantu peserta didik menguasai materi Bahasa Sunda SMA sesuai Capaian Pembelajaran.
+7. Mengembangkan kemampuan menulis, merevisi, dan mengevaluasi tulisan.
+8. Mengenalkan nilai, tradisi, sastra, dan budaya Sunda.
+9. Mengembangkan kemandirian belajar dan literasi AI secara bertanggung jawab.
+
+## Tujuan pembelajaran
+
+Setelah menggunakan BABATURAN secara konsisten, peserta didik diharapkan mampu:
+- Memahami kosakata dan ungkapan Bahasa Sunda.
+- Menerjemahkan Bahasa Sunda ke Bahasa Indonesia dan sebaliknya.
+- Memahami terjemahan Bahasa Sunda ke Bahasa Inggris sebagai pengayaan.
+- Menyusun kalimat sederhana sampai kompleks.
+- Membedakan penggunaan ragam bahasa sesuai konteks komunikasi.
+- Melakukan percakapan sederhana dan situasional.
+- Memahami serta menghasilkan berbagai teks berbahasa Sunda.
+- Meningkatkan keterampilan menyimak, berbicara, membaca, dan menulis.
+- Meningkatkan kemampuan merevisi tulisan sendiri.
+- Menggunakan AI sebagai alat bantu belajar, bukan pengganti berpikir.
+
+# 3. TARGET PENGGUNA DAN PEMBELAJARAN BERDIFERENSIASI
+
+Pada saat pertama kali menggunakan aplikasi, siswa harus mengikuti onboarding sederhana.
+
+Sediakan empat profil awal:
+
+**A. Pamula — Saya Belum Bisa Bahasa Sunda**
+
+- Memulai dari kosakata sehari-hari.
+- Belajar salam, perkenalan, angka, benda, tempat, dan aktivitas.
+- Mendapat bantuan terjemahan Bahasa Indonesia.
+- Menggunakan kalimat pendek.
+- Berlatih bertahap dari kata, frasa, kalimat, hingga percakapan.
+
+**B. Ngarti Tapi Can Bisa Nyarita — Saya Paham, tetapi Belum Bisa Berbicara**
+
+- Latihan menyusun kalimat.
+- Melengkapi percakapan.
+- Menjawab pertanyaan sederhana.
+- Mengubah bahasa pasif menjadi kemampuan berbicara aktif.
+- Berlatih percakapan dengan chatbot.
+
+**C. Ngamimitian Nyarita — Saya Bisa Sedikit**
+
+- Memperluas kosakata.
+- Melatih kelancaran percakapan.
+- Memperbaiki struktur kalimat.
+- Melatih penggunaan loma dan lemes sesuai konteks.
+- Mengembangkan kemampuan bercerita dan berpendapat.
+
+**D. Mahir — Saya Ingin Meningkatkan Kemampuan**
+
+- Percakapan lebih kompleks.
+- Diskusi dan argumentasi.
+- Analisis teks dan karya sastra Sunda.
+- Ungkapan dan peribahasa.
+- Pengayaan budaya dan penggunaan bahasa dalam situasi formal maupun nonformal.
+
+Lakukan diagnostic assessment singkat untuk mengidentifikasi:
+- Penguasaan kosakata.
+- Pemahaman kalimat.
+- Kemampuan membaca.
+- Kemampuan memahami percakapan.
+- Kemampuan menyusun respons.
+- Kemampuan menerjemahkan.
+- Pemahaman undak-usuk basa.
+
+Profil kemampuan harus dapat berubah seiring perkembangan siswa.
+
+# 4. KONSEP UTAMA BABATURAN
+
+Gunakan konsep:
+
+**"Learn. Translate. Practice. Speak. Preserve."**
+
+BABATURAN mempunyai lima peran utama:
+
+1. **AI Tutor:** Mengajarkan materi Bahasa Sunda.
+2. **BABATURAN Translator:** Menerjemahkan bahasa secara dua arah.
+3. **AI Conversation Partner:** Menjadi teman berbicara dan berlatih.
+4. **AI Writing Assistant:** Membantu siswa meningkatkan kemampuan menulis.
+5. **Cultural Companion:** Mengenalkan bahasa, sastra, tradisi, dan budaya Sunda.
+
+Chatbot harus terasa seperti teman belajar yang ramah, sabar, suportif, tidak menghakimi, dan mampu menyesuaikan gaya komunikasi dengan kemampuan pengguna.
+
+Gunakan Bahasa Indonesia untuk penjelasan awal dan Bahasa Sunda secara bertahap sesuai kemampuan siswa.
+
+Gunakan kata "Abdi" sebagai pilihan contoh orang pertama dalam ragam lemes ketika sesuai konteks. Jelaskan penggunaan "Kuring" dalam konteks yang tepat, bukan menganggapnya selalu salah.
+
+# 5. FITUR UTAMA — BABATURAN TRANSLATOR
+
+Fitur penerjemah merupakan salah satu fitur inti aplikasi dan harus memiliki halaman khusus.
+
+Nama fitur:
+
+**BABATURAN TRANSLATOR — Tarjamahkeun, Pahami, Diajar!**
+
+Tujuannya bukan sekadar menghasilkan terjemahan, tetapi membantu siswa memahami makna, kosakata, struktur, dan konteks penggunaan bahasa.
+
+## 5.1 Dukungan tiga bahasa
+
+Prioritaskan tiga bahasa:
+
+1. Bahasa Sunda (`su`).
+2. Bahasa Indonesia (`id`).
+3. Bahasa Inggris (`en`).
+
+Sediakan kemampuan terjemahan berikut:
+
+- Sunda → Indonesia.
+- Indonesia → Sunda.
+- Sunda → Inggris.
+- Inggris → Sunda.
+- Indonesia → Inggris.
+- Inggris → Indonesia.
+
+Terjemahan Sunda–Indonesia merupakan prioritas tertinggi.
+
+Bahasa Inggris menjadi fitur tambahan untuk pengayaan pembelajaran.
+
+Apabila kualitas terjemahan untuk pasangan bahasa tertentu belum memadai, tampilkan pemberitahuan bahwa hasilnya merupakan terjemahan otomatis yang perlu diperiksa kembali.
+
+## 5.2 Desain halaman translator
+
+Buat tampilan penerjemah seperti aplikasi translator modern.
+
+Komponen:
+- Kotak teks sumber.
+- Pilihan bahasa sumber.
+- Tombol deteksi bahasa otomatis apabila tersedia.
+- Pilihan bahasa tujuan.
+- Tombol tukar bahasa.
+- Tombol terjemahkan.
+- Kotak hasil terjemahan.
+- Tombol salin.
+- Tombol dengarkan apabila tersedia.
+- Tombol hapus.
+- Riwayat terjemahan.
+- Tombol simpan kosakata.
+- Tombol analisis dengan BABATURAN AI.
+
+Contoh:
+
+Bahasa sumber: Indonesia.
+
+Bahasa tujuan: Sunda.
+
+Input:
+"Saya ingin belajar Bahasa Sunda karena saya ingin mengenal budaya Sunda."
+
+Output:
+Hasil terjemahan Bahasa Sunda.
+
+Di bawah hasil terjemahan, tampilkan:
+- Arti dalam Bahasa Indonesia.
+- Penjelasan kosakata.
+- Struktur kalimat.
+- Contoh kalimat alternatif.
+- Catatan ragam bahasa.
+- Penjelasan penggunaannya.
+
+Tambahkan tombol pertukaran bahasa yang mudah digunakan.
+
+## 5.3 Contextual Translation — Terjemahan Berdasarkan Konteks
+
+Jangan hanya melakukan terjemahan kata demi kata.
+
+Sediakan pilihan konteks:
+
+- Percakapan dengan teman sebaya.
+- Percakapan dengan guru.
+- Percakapan dengan orang tua.
+- Percakapan formal.
+- Percakapan santai.
+- Penulisan tugas sekolah.
+- Artikel atau teks formal.
+
+Untuk Bahasa Sunda, sistem harus mempertimbangkan ragam bahasa.
+
+Contohnya, kalimat "Saya mau pergi" dapat memiliki bentuk berbeda bergantung pada konteks dan siapa lawan bicara.
+
+Apabila pengguna memilih konteks berbicara kepada guru, berikan alternatif yang sesuai dengan ragam lemes.
+
+Apabila berbicara dengan teman sebaya, jelaskan pilihan ragam loma yang alami.
+
+Jika terdapat beberapa kemungkinan terjemahan, tampilkan alternatif dan perbedaannya.
+
+Jangan memaksakan satu terjemahan sebagai satu-satunya bentuk yang benar.
+
+## 5.4 Word-by-Word Translator
+
+Tambahkan fitur analisis per kata.
+
+Ketika pengguna memasukkan kalimat, BABATURAN dapat menampilkan tabel:
+
+| Kata | Arti | Keterangan |
+|---|---|---|
+| Abdi | Saya | Ragam lemes |
+| Badé | Akan/mau | Ragam lemes |
+| Angkat | Pergi | Ragam lemes |
+| Ka | Ke | Kata depan |
+| Sakola | Sekolah | Kosakata umum |
+
+Contoh di atas hanya ilustrasi.
+
+Fitur ini harus mampu menyesuaikan hasil analisis dengan kalimat yang sebenarnya.
+
+## 5.5 Multiple Translation Alternatives
+
+Jika suatu kata memiliki beberapa makna, sediakan:
+- Terjemahan utama.
+- Alternatif terjemahan.
+- Makna berdasarkan konteks.
+- Contoh kalimat.
+- Perbedaan penggunaan.
+
+Contoh:
+Kata yang memiliki makna berbeda dalam percakapan santai dan formal harus diberikan catatan konteks.
+
+Siswa dapat memilih hasil yang paling sesuai dengan kebutuhan.
+
+## 5.6 Translation Learning Mode
+
+Tambahkan mode khusus belajar dari hasil terjemahan.
+
+Setelah siswa menerjemahkan kalimat, BABATURAN dapat mengajak mereka:
+
+1. Membaca hasil terjemahan.
+2. Memahami kosakata.
+3. Mengidentifikasi struktur kalimat.
+4. Memahami undak-usuk basa.
+5. Mencoba menulis ulang tanpa melihat hasil terjemahan.
+6. Mengerjakan latihan serupa.
+
+Dengan demikian, penerjemah tidak hanya menyelesaikan tugas, tetapi membantu siswa mempelajari bahasa yang digunakan.
+
+## 5.7 Vocabulary Extraction
+
+Siswa dapat memilih kata dari hasil terjemahan kemudian menyimpannya ke koleksi pribadi.
+
+Setiap kosakata yang disimpan memiliki:
+- Kata.
+- Arti.
+- Jenis atau kategori.
+- Contoh penggunaan.
+- Audio jika tersedia.
+- Ragam bahasa.
+- Tanggal disimpan.
+
+Integrasikan dengan Vocabulary Quest agar siswa dapat berlatih kembali menggunakan kosakata tersebut.
+
+## 5.8 Translation History
+
+Sediakan riwayat terjemahan yang dapat:
+- Dilihat kembali.
+- Dicari.
+- Difavoritkan.
+- Dihapus.
+- Dikelompokkan berdasarkan materi.
+- Disimpan sebagai kosakata.
+
+Riwayat harus tetap privat bagi setiap siswa.
+
+## 5.9 Translation Documents
+
+Apabila memungkinkan, tambahkan penerjemah dokumen untuk:
+- TXT.
+- DOCX.
+- PDF berbasis teks.
+
+Prioritaskan implementasi text translator terlebih dahulu.
+
+Untuk dokumen, pertahankan:
+- Urutan paragraf.
+- Heading.
+- Struktur tabel sederhana.
+- Format dasar.
+
+Jangan mengklaim bahwa seluruh format atau dokumen hasil scan dapat diterjemahkan dengan sempurna. Untuk PDF hasil scan diperlukan OCR dan proses tambahan.
+
+# 6. STRATEGI INTEGRASI TRANSLATOR DAN API
+
+Ini merupakan bagian teknis yang sangat penting.
+
+Jangan membuat mesin penerjemah dari nol apabila tersedia layanan yang dapat digunakan secara sah dan lebih akurat.
+
+Lakukan pendekatan multi-provider sehingga aplikasi tidak bergantung pada satu layanan.
+
+## 6.1 Kandidat provider utama: Google Cloud Translation API
+
+Prioritaskan evaluasi integrasi Google Cloud Translation API.
+
+Dokumentasi resmi:
+https://docs.cloud.google.com/translate/docs
+
+Model Neural Machine Translation Google mencantumkan Bahasa Sunda dengan kode `su`, Bahasa Indonesia `id`, dan Bahasa Inggris `en`.
+
+Implementasikan pasangan bahasa tersebut melalui backend.
+
+Pertimbangkan:
+- Kualitas terjemahan.
+- Latency.
+- Biaya penggunaan.
+- Quota.
+- Rate limiting.
+- Keamanan API key.
+- Penanganan error.
+- Batas karakter.
+- Penggunaan pada perangkat mobile.
+
+Jangan meletakkan Google API key secara langsung dalam kode frontend.
+
+Seluruh request harus melewati backend atau serverless function yang aman.
+
+## 6.2 Kandidat provider tambahan: SundaDigi Translator
+
+Evaluasi layanan:
+
+https://sundadigi.com/translator
+
+SundaDigi merupakan kandidat penting karena memiliki orientasi khusus pada bahasa dan budaya Sunda.
+
+Lakukan pemeriksaan berikut:
+
+1. Apakah tersedia API resmi?
+2. Apakah dokumentasi integrasi dapat diperoleh?
+3. Apakah tersedia endpoint untuk menerjemahkan teks?
+4. Apakah membutuhkan API key atau autentikasi?
+5. Apakah layanan mendukung integrasi aplikasi pihak ketiga?
+6. Apakah tersedia ketentuan penggunaan komersial maupun pendidikan?
+7. Apakah terdapat batas penggunaan?
+8. Bagaimana kebijakan privasi dan penyimpanan teks siswa?
+
+Prioritas implementasi:
+
+**Pilihan A — Official API**
+
+Apabila pemilik SundaDigi menyediakan API resmi dan mengizinkan integrasi, gunakan API tersebut sebagai salah satu provider penerjemah.
+
+**Pilihan B — Official Embed**
+
+Apabila tersedia fitur embed resmi atau izin dari pengelola, pertimbangkan integrasi melalui komponen embed atau iframe.
+
+Pastikan:
+- Website mengizinkan embedding.
+- Tidak melanggar Content Security Policy atau X-Frame-Options.
+- Tidak melanggar ketentuan penggunaan.
+- Tampilan tetap responsif.
+- Pengalaman pengguna tidak terputus.
+
+**Pilihan C — External Translator**
+
+Apabila API dan embed tidak tersedia, tampilkan tombol untuk membuka SundaDigi Translator pada tab baru.
+
+URL:
+https://sundadigi.com/translator
+
+Jangan mengasumsikan endpoint API internal hanya dari hasil inspeksi browser.
+
+Jangan menggunakan scraping, reverse engineering endpoint privat, atau mengakali pembatasan akses tanpa izin pemilik layanan.
+
+BABATURAN tetap harus memiliki penerjemah internal yang berfungsi meskipun SundaDigi tidak dapat diintegrasikan.
+
+## 6.3 Fallback Translator
+
+Rancang sistem provider adapter yang memungkinkan penambahan atau penggantian layanan.
+
+Alur:
+
+1. Pengguna memasukkan teks.
+2. Sistem mengidentifikasi bahasa dan pasangan bahasa.
+3. Sistem memilih provider yang mendukung pasangan tersebut.
+4. Request dikirim melalui backend.
+5. Sistem menerima hasil terjemahan.
+6. Hasil ditampilkan kepada siswa.
+7. Apabila provider gagal, sistem menawarkan provider cadangan apabila tersedia.
+8. Jika semua provider gagal, tampilkan pesan error yang jelas.
+
+Contoh urutan prioritas:
+- Provider utama yang telah diuji untuk pasangan bahasa terkait.
+- Provider alternatif yang telah disetujui.
+- AI language model sebagai bantuan penjelasan atau alternatif, bukan dianggap otomatis setara dengan mesin penerjemah khusus.
+
+Jangan mengirim satu teks siswa ke banyak provider secara otomatis tanpa alasan. Hal tersebut dapat menambah biaya dan risiko privasi.
+
+Sediakan pengaturan provider pada panel administrator.
+
+## 6.4 AI Contextual Translation Layer
+
+Setelah mendapatkan hasil penerjemahan mesin, BABATURAN AI dapat memberikan penjelasan tambahan.
+
+Misalnya:
+- Apakah hasil terjemahan sudah alami?
+- Apakah kalimat cocok untuk berbicara kepada guru?
+- Apakah terdapat campuran ragam bahasa?
+- Apakah terdapat alternatif yang lebih tepat?
+- Mengapa suatu kata digunakan?
+
+Pisahkan dengan jelas:
+
+A. Hasil terjemahan mesin.
+
+B. Saran dan penjelasan AI.
+
+Jangan menyamarkan saran generatif menjadi hasil terjemahan resmi.
+
+Tambahkan label:
+- Machine Translation.
+- AI Explanation.
+- Alternative Translation.
+- Needs Verification.
+
+Untuk Bahasa Sunda, sediakan mekanisme validasi guru dan glossary yang dapat dikembangkan.
+
+## 6.5 Translation Glossary
+
+Bangun database kosakata dan istilah Bahasa Sunda yang dapat dikonfigurasi.
+
+Guru dapat memasukkan:
+- Kata.
+- Arti.
+- Sinonim.
+- Antonim apabila relevan.
+- Ragam loma.
+- Ragam lemes.
+- Contoh kalimat.
+- Konteks.
+- Catatan penggunaan.
+- Sumber rujukan.
+
+Gunakan glossary tersebut untuk membantu konsistensi terjemahan.
+
+Jika provider mendukung custom glossary, integrasikan fitur tersebut.
+
+## 6.6 Teknologi yang tidak boleh diasumsikan
+
+Jangan mengandalkan Google Translate Website Translator Widget sebagai fondasi aplikasi baru. Utamakan Cloud Translation API.
+
+Jangan menganggap semua layanan gratis atau memiliki API publik.
+
+Semua integrasi harus berdasarkan dokumentasi, izin, biaya, dan kemampuan teknis yang benar-benar tersedia.
+
+Jika belum tersedia API key, sediakan konfigurasi placeholder dan demo mode yang diberi label jelas.
+
+# 7. FITUR BABATURAN AI TUTOR
+
+Bangun chatbot AI yang dapat menjawab pertanyaan tentang Bahasa Sunda.
+
+Kemampuan:
+- Menerjemahkan Bahasa Indonesia ke Bahasa Sunda dan sebaliknya.
+- Menerjemahkan Bahasa Sunda ke Bahasa Inggris dan sebaliknya.
+- Menjelaskan arti kosakata.
+- Memberikan contoh penggunaan kata.
+- Menjelaskan tata bahasa.
+- Menjelaskan undak-usuk basa.
+- Membandingkan ragam bahasa.
+- Memperbaiki kalimat.
+- Membantu memahami materi pelajaran SMA.
+- Memberikan contoh teks dan dialog.
+- Menyediakan latihan.
+- Menjelaskan kesalahan dengan bahasa sederhana.
+
+Contoh:
+
+Siswa:
+"Bagaimana cara mengatakan saya mau pergi ke sekolah dalam bahasa Sunda?"
+
+BABATURAN:
+"Dina basa Sunda, anjeun tiasa nyarios:
+
+'Abdi badé angkat ka sakola.'
+
+Artinya: Saya akan pergi ke sekolah.
+
+Hayu urang diajar saeutik!
+- Abdi = saya.
+- Badé = akan/mau.
+- Angkat = pergi.
+- Ka sakola = ke sekolah.
+
+Kalau berbicara dengan teman sebaya, bentuk loma yang sesuai dapat berbeda."
+
+Sediakan tombol:
+- Translate.
+- Explain.
+- Give Examples.
+- Practice This Sentence.
+- Change to Loma.
+- Change to Lemes.
+
+# 8. ROLEPLAY CONVERSATION: HAYU NYARITA!
+
+Bangun simulator percakapan interaktif.
+
+Skenario:
+
+**Level 1 — Daily Conversation**
+- Menyapa teman.
+- Berkenalan.
+- Menanyakan kabar.
+- Memesan makanan.
+- Membeli sesuatu.
+- Menanyakan arah.
+- Aktivitas sehari-hari.
+
+**Level 2 — School Conversation**
+- Berbicara dengan teman.
+- Meminta izin kepada guru.
+- Bertanya kepada guru.
+- Berdiskusi dalam kelompok.
+- Menyampaikan pendapat.
+- Menjadi panumbu catur.
+
+**Level 3 — Social and Cultural Conversation**
+- Berbicara kepada orang yang lebih tua.
+- Berkunjung ke rumah seseorang.
+- Menghadiri acara keluarga.
+- Berkomunikasi dalam kegiatan masyarakat.
+
+**Level 4 — Advanced Conversation**
+- Diskusi isu sosial.
+- Argumentasi.
+- Debat sederhana.
+- Bercerita.
+- Memberikan tanggapan.
+
+Mekanisme:
+1. Siswa memilih skenario.
+2. BABATURAN menjelaskan konteks.
+3. Chatbot mengambil karakter.
+4. Siswa merespons.
+5. Chatbot menjawab secara natural.
+6. Sistem memberikan feedback.
+7. Siswa dapat mengulang.
+
+Tingkat bantuan:
+- Easy Mode: Terjemahan dan petunjuk.
+- Normal Mode: Kata kunci.
+- Challenge Mode: Tanpa bantuan.
+
+Tambahkan kemampuan suara apabila teknologi mendukung:
+- Speech-to-text.
+- Text-to-speech.
+- Rekam dan berhenti.
+- Mengulang pengucapan.
+- Evaluasi pengucapan dengan batasan akurasi yang transparan.
+
+Semua skenario tetap dapat dikerjakan melalui teks.
+
+# 9. UNDAK-USUK BATTLE
+
+Bangun pembelajaran undak-usuk basa menggunakan situasi nyata.
+
+Jangan hanya meminta siswa menghafalkan pasangan kata loma dan lemes.
+
+Siswa harus memahami siapa yang berbicara, kepada siapa, dalam situasi apa, dan untuk tujuan komunikasi apa.
+
+Challenge:
+- Loma or Lemes?
+- Choose the Best Expression.
+- Fix the Conversation.
+- Who Are You Talking To?
+- Undak-Usuk Detective.
+
+Setelah siswa memilih jawaban, jelaskan:
+- Ketepatan pilihan.
+- Alasan.
+- Kata yang perlu diperbaiki.
+- Alternatif kalimat.
+- Konteks penggunaan.
+
+Kesalahan harus menjadi kesempatan belajar, bukan hukuman.
+
+# 10. VOCABULARY QUEST: KANDAGA KECAP
+
+Bangun fitur kosakata dengan pendekatan spaced repetition.
+
+Fitur:
+- Flashcard interaktif.
+- Terjemahan tiga bahasa.
+- Audio apabila tersedia.
+- Contoh percakapan.
+- Favorite vocabulary.
+- Kosakata yang sering salah.
+- Daily vocabulary challenge.
+- Integrasi dengan riwayat translator.
+
+Kategori:
+1. Salam dan perkenalan.
+2. Keluarga.
+3. Sekolah.
+4. Makanan dan minuman.
+5. Rumah.
+6. Aktivitas sehari-hari.
+7. Lingkungan.
+8. Alam.
+9. Perjalanan.
+10. Perasaan dan emosi.
+11. Pekerjaan.
+12. Budaya dan tradisi.
+
+# 11. AI WRITING LAB: TULIS, BANDINGKEUN, REVISI!
+
+Ini merupakan inovasi utama BABATURAN.
+
+Fitur ini secara khusus dirancang untuk menjawab pertanyaan pembelajaran:
+
+**"How does writing a first draft without AI, then comparing it with a chatbot's version, influence how my students revise their own writing?"**
+
+Tujuan:
+
+Mengetahui bagaimana siswa mengembangkan kemampuan menulis melalui proses membuat tulisan mandiri, membandingkannya dengan saran chatbot, kemudian merevisi karya berdasarkan pemahamannya sendiri.
+
+BABATURAN harus membantu menyediakan bukti pembelajaran berupa:
+- Draft 1.
+- Draft 2.
+- Rubrik yang sama.
+- Perbandingan tulisan.
+- Refleksi siswa.
+
+Penting: BABATURAN tidak boleh menggantikan proses berpikir siswa.
+
+## 11.1 Teacher Assignment Setup
+
+Guru dapat membuat tugas dengan:
+- Judul.
+- Materi.
+- Instruksi.
+- Bahasa yang digunakan.
+- Topik penulisan.
+- Batas kata.
+- Waktu pengerjaan.
+- Rubrik.
+- Ketentuan penggunaan AI.
+- Ketentuan penggunaan kamus dan translator.
+
+Sediakan tiga kebijakan:
+
+**Mode A — Independent Writing**
+
+Siswa harus menyusun Draft 1 tanpa AI dan tanpa mesin penerjemah.
+
+**Mode B — Dictionary Allowed**
+
+Siswa boleh menggunakan kamus atau glossary yang telah disetujui guru, tetapi tidak boleh menggunakan generative AI atau automatic translation.
+
+**Mode C — Teacher-Defined Assistance**
+
+Guru menentukan alat bantu mana yang diizinkan pada tahap awal.
+
+Secara default, gunakan Independent Writing untuk mengukur kemampuan menulis awal siswa.
+
+Sediakan mekanisme penguncian akses AI dan translator pada tahap tersebut.
+
+Pastikan mekanisme ini benar-benar berlaku pada backend dan bukan hanya menyembunyikan tombol di frontend.
+
+## 11.2 Tahap 1 — Independent Draft (Draft 1)
+
+Siswa mendapat tugas menulis.
+
+Contoh:
+
+"Tuliskeun pangalaman anjeun nalika munggaran asup ka SMA."
+
+Siswa harus membuat tulisan secara mandiri.
+
+Pada tahap ini:
+- BABATURAN tidak boleh memberikan jawaban lengkap.
+- Translator dinonaktifkan sesuai kebijakan tugas.
+- AI feedback dinonaktifkan.
+- Chatbot tidak boleh membantu menyusun isi tulisan.
+- Siswa hanya dapat melihat instruksi dan panduan umum.
+- Draft 1 disimpan sebagai versi asli.
+- Sistem mencatat waktu pengumpulan.
+- Draft 1 tidak boleh ditimpa oleh draft selanjutnya.
+
+Berikan label:
+
+**DRAFT 1 — Written Independently Without AI**
+
+Ini merupakan bukti kemampuan awal siswa.
+
+## 11.3 Tahap 2 — AI and Translator Assistance
+
+Setelah Draft 1 dikumpulkan, akses bantuan AI dan translator dibuka sesuai pengaturan guru.
+
+Siswa dapat:
+- Memahami arti kata yang belum diketahui.
+- Menerjemahkan kalimat.
+- Memeriksa pilihan kosakata.
+- Meminta penjelasan tata bahasa.
+- Meminta alternatif kalimat.
+- Memeriksa undak-usuk basa.
+- Meminta analisis tulisan.
+- Meminta contoh versi chatbot.
+
+Sediakan dua bentuk bantuan berbeda:
+
+**A. Translation Assistance**
+
+Menggunakan BABATURAN Translator untuk menerjemahkan kata, kalimat, atau teks.
+
+**B. AI Writing Assistance**
+
+Menggunakan chatbot untuk menganalisis tulisan dan menghasilkan contoh alternatif.
+
+Keduanya harus dicatat secara terpisah agar guru dapat melihat bentuk bantuan yang digunakan.
+
+## 11.4 Tahap 3 — Chatbot Version
+
+Setelah Draft 1, siswa dapat meminta BABATURAN menghasilkan versi alternatif berdasarkan:
+- Instruksi tugas.
+- Topik.
+- Tingkat kemampuan siswa.
+- Ragam bahasa yang diinginkan.
+- Ketentuan penulisan.
+
+Versi chatbot harus:
+- Relevan dengan topik.
+- Menggunakan Bahasa Sunda yang sesuai.
+- Memiliki penjelasan kosakata.
+- Memperhatikan undak-usuk basa.
+- Tidak mengarang fakta dari pengalaman pribadi siswa.
+- Diberikan label yang jelas sebagai hasil AI.
+
+Tampilkan:
+
+**AI-GENERATED VERSION — FOR COMPARISON ONLY**
+
+Jelaskan bahwa versi tersebut bukan jawaban mutlak dan bukan sesuatu yang harus disalin.
+
+## 11.5 Tahap 4 — Side-by-Side Comparison
+
+Tampilkan tiga panel:
+
+1. Draft 1 — Tulisan Asli Siswa.
+2. AI Version — Versi Alternatif dari BABATURAN.
+3. Revision Notes — Analisis Perbedaan.
+
+Gunakan highlighting untuk:
+- Kata yang berbeda.
+- Struktur kalimat.
+- Penggunaan undak-usuk basa.
+- Ejaan.
+- Tata bahasa.
+- Keterpaduan gagasan.
+- Kelengkapan isi.
+
+Berikan penjelasan pada setiap perubahan.
+
+Siswa dapat memilih perubahan yang dianggap tepat dan menjelaskan alasannya.
+
+Jangan menganggap seluruh perubahan AI pasti benar.
+
+## 11.6 Tahap 5 — Independent Revision (Draft 2)
+
+Siswa menulis kembali dengan mempertimbangkan:
+- Pemahaman dari terjemahan.
+- Penjelasan chatbot.
+- Alternatif kosakata.
+- Perbedaan struktur kalimat.
+- Masukan guru.
+- Pengetahuan awal siswa.
+
+Jangan otomatis mengubah Draft 1 menjadi Draft 2.
+
+Draft 2 harus benar-benar menjadi tulisan hasil keputusan dan revisi siswa.
+
+Simpan:
+- Draft 1.
+- AI Version.
+- Draft 2.
+- Waktu pengerjaan.
+- Riwayat revisi.
+- Catatan perubahan.
+
+Berikan label:
+
+**DRAFT 2 — Student Revised Writing**
+
+## 11.7 Tahap 6 — Assessment
+
+Nilai Draft 1 dan Draft 2 dengan rubrik yang sama.
+
+Rubrik minimal:
+
+1. Ketepatan kosakata.
+2. Struktur dan tata bahasa.
+3. Ketepatan penggunaan undak-usuk basa.
+4. Koherensi dan keterpaduan ide.
+5. Kesesuaian isi dengan tujuan penulisan.
+
+Bobot dan indikator dapat diatur oleh guru.
+
+Tampilkan:
+- Skor Draft 1.
+- Skor Draft 2.
+- Perbedaan hasil.
+- Kekuatan tulisan.
+- Aspek yang mengalami perkembangan.
+- Aspek yang masih perlu ditingkatkan.
+
+Jangan membuat skor peningkatan secara otomatis apabila rubrik belum memiliki dasar penilaian yang jelas.
+
+Sediakan opsi penilaian manual guru dan AI-assisted feedback yang dapat diperiksa guru.
+
+## 11.8 Tahap 7 — Student Reflection
+
+Sediakan refleksi:
+
+1. Apa hal penting yang saya pelajari ketika menulis Draft 1?
+2. Apa perbedaan paling penting antara tulisan saya dan versi BABATURAN?
+3. Kosakata atau struktur kalimat apa yang baru saya pelajari?
+4. Perbaikan apa yang saya lakukan pada Draft 2?
+5. Apakah saya memahami alasan perubahan tersebut?
+6. Apakah saran AI selalu benar? Mengapa?
+7. Bagian mana yang masih sulit bagi saya?
+8. Apakah saya lebih percaya diri menulis Bahasa Sunda setelah kegiatan ini?
+
+Simpan seluruh refleksi untuk dianalisis guru.
+
+## 11.9 Research Evidence Dashboard
+
+Sediakan tampilan laporan untuk membantu guru mengevaluasi pertanyaan penelitian.
+
+Guru dapat melihat:
+- Draft 1 dan Draft 2 siswa.
+- Hasil rubrik yang sama.
+- Perubahan kosakata.
+- Perubahan struktur kalimat.
+- Jenis revisi.
+- Jumlah saran AI yang diterima atau ditolak.
+- Penggunaan translator.
+- Refleksi siswa.
+
+Kelompokkan jenis revisi menjadi:
+- Lexical Revision.
+- Grammar Revision.
+- Sentence Structure Revision.
+- Context and Register Revision.
+- Content Revision.
+- Organization Revision.
+
+Jangan menyimpulkan bahwa AI menyebabkan peningkatan kemampuan hanya berdasarkan perbedaan nilai dua draft. Gunakan hasil tulisan, riwayat revisi, refleksi, dan bukti tambahan sebagai bahan analisis.
+
+Fitur ekspor laporan harus menghasilkan data:
+- Draft 1.
+- AI Version.
+- Draft 2.
+- Rubrik.
+- Catatan revisi.
+- Refleksi siswa.
+
+Semua data harus dapat diekspor dalam format yang mudah digunakan guru, misalnya PDF atau XLSX apabila memungkinkan.
+
+# 12. SMA CURRICULUM LEARNING HUB
+
+Buat pusat pembelajaran yang menghubungkan BABATURAN dengan materi Bahasa Sunda SMA.
+
+Prioritaskan materi Fase E dan Fase F sesuai dokumen CP yang dimasukkan atau diverifikasi guru.
+
+Contoh materi Fase F:
+
+**Kelas XI**
+- Carpon dan novel.
+- Biografi dan autobiografi.
+- Panumbu catur.
+- Kawih.
+- Sisindiran.
+- Sajak.
+- Berita dan artikel.
+- Terjemahan.
+
+**Kelas XII**
+- Wawacan.
+- Carita pantun.
+- Wayang.
+- Teks argumentasi.
+- Drama.
+
+Jangan menganggap daftar ini sebagai dokumen CP resmi yang tidak dapat diubah.
+
+Guru harus dapat menyesuaikan materi berdasarkan CP, ATP, dan modul ajar yang berlaku.
+
+Setiap materi memiliki:
+1. Tujuan pembelajaran.
+2. Penjelasan.
+3. Contoh.
+4. Kosakata.
+5. Terjemahan.
+6. Latihan interaktif.
+7. Percakapan terkait materi.
+8. Kuis formatif.
+9. Refleksi.
+
+Integrasikan Translator agar siswa dapat memahami teks Bahasa Sunda sekaligus mempelajari strukturnya.
+
+# 13. AKSARA SUNDA CORNER
+
+Tambahkan ruang khusus untuk mengenalkan Aksara Sunda.
+
+Fitur:
+- Aksara ngalagena.
+- Aksara swara.
+- Angka Sunda.
+- Rarangken.
+- Latihan membaca.
+- Latihan mencocokkan aksara dengan Latin.
+- Latihan menulis.
+- Kuis interaktif.
+
+Apabila memungkinkan, integrasikan dengan simulator Aksara Sunda digital atau media DIRAKSA.
+
+# 14. SUNDANESE CULTURE EXPLORER
+
+Bangun fitur eksplorasi budaya Sunda.
+
+Topik:
+- Tradisi Sunda.
+- Kesenian.
+- Alat musik.
+- Makanan tradisional.
+- Pakaian adat.
+- Cerita rakyat.
+- Tokoh Sunda.
+- Peribahasa.
+- Sisindiran.
+- Kawih.
+- Permainan tradisional.
+- Nilai kehidupan masyarakat Sunda.
+
+Gunakan pendekatan interaktif.
+
+Contoh:
+- Tebak nama alat musik.
+- Cocokkan istilah budaya.
+- Cerita interaktif.
+- Tebak peribahasa.
+- Cultural quiz.
+- Misi eksplorasi budaya.
+
+Gunakan sumber yang dapat diverifikasi dan berikan ruang bagi guru untuk menambahkan materi yang telah diperiksa.
+
+# 15. GAMIFIKASI: BABATURAN ADVENTURE
+
+Integrasikan gamifikasi bergaya RPG.
+
+## Sistem XP
+
+XP diperoleh melalui:
+- Menyelesaikan materi.
+- Menuntaskan latihan.
+- Melakukan percakapan.
+- Menggunakan fitur translator untuk belajar.
+- Menyelesaikan misi.
+- Memperbaiki kesalahan.
+- Menyelesaikan refleksi.
+- Berlatih secara konsisten.
+
+Berikan apresiasi atas usaha dan perkembangan, bukan hanya jawaban benar.
+
+## Sistem Rank
+
+Contoh:
+- Pamula.
+- Pangwanoh.
+- Pangucap.
+- Panutur.
+- Jawara Basa.
+
+## Badge
+
+- First Sundanese Word.
+- First Translation.
+- First Conversation.
+- Brave Speaker.
+- Vocabulary Explorer.
+- Undak-Usuk Master.
+- Writing Improver.
+- Cultural Explorer.
+- Consistent Learner.
+
+## Progress Map
+
+Tampilkan:
+- Modul selesai.
+- Modul aktif.
+- Modul berikutnya.
+- Kemampuan yang dikuasai.
+- Rekomendasi latihan.
+
+## Respect and Communication Meter
+
+Gunakan indikator:
+- Merenah: sesuai konteks.
+- Perlu Dilereskeun: perlu diperbaiki.
+- Perlu Konteks: perlu disesuaikan dengan situasi.
+
+Jangan mempermalukan siswa karena kesalahan bahasa.
+
+## Daily Mission
+
+Tambahkan:
+- Daily mission.
+- Weekly challenge.
+- Learning streak.
+- Achievement.
+- Personal milestone.
+
+Leaderboard bersifat opsional, menggunakan nama samaran, dan tidak boleh menjadi sumber tekanan sosial.
+
+# 16. ADAPTIVE AI LEARNING
+
+BABATURAN harus mampu menyesuaikan pembelajaran berdasarkan interaksi pengguna.
+
+Jika siswa belum mengenal kosakata:
+- Berikan arti dalam Bahasa Indonesia.
+- Berikan contoh sederhana.
+- Gunakan kosakata tersebut dalam percakapan.
+
+Jika siswa memahami kosakata:
+- Kurangi terjemahan.
+- Gunakan lebih banyak Bahasa Sunda.
+- Berikan tantangan menyusun kalimat.
+
+Jika siswa sudah mulai lancar:
+- Gunakan percakapan lebih kompleks.
+- Berikan skenario tanpa bantuan.
+- Dorong siswa menyampaikan pendapat.
+
+Jika siswa sering melakukan kesalahan:
+- Identifikasi pola.
+- Berikan penjelasan.
+- Berikan latihan tambahan.
+- Tampilkan perkembangan.
+
+Sediakan rekomendasi:
+
+**"Saterusna kedah diajar naon?"**
+
+atau
+
+**"What should I learn next?"**
+
+# 17. SISTEM AI DAN NLP
+
+Gunakan arsitektur AI modular.
+
+Jangan mengunci aplikasi pada satu model AI.
+
+Komponen:
+1. Intent Recognition.
+2. Natural Language Understanding.
+3. Context-Aware Response Generation.
+4. Machine Translation Integration.
+5. Sundanese Language Feedback.
+6. Vocabulary Recognition.
+7. Undak-Usuk Context Evaluation.
+8. Learning Recommendation.
+9. Conversation Memory.
+10. Student Progress Analysis.
+11. Writing Comparison.
+
+## RAG — Retrieval-Augmented Generation
+
+Gunakan pendekatan RAG untuk meningkatkan keakuratan jawaban.
+
+Sumber:
+- Kamus Bahasa Sunda yang sah digunakan.
+- Materi yang divalidasi guru.
+- Contoh kalimat.
+- Kosakata.
+- Dokumen CP dan ATP.
+- Materi sastra.
+- Sumber budaya tepercaya.
+- Glossary sekolah.
+
+Apabila AI tidak yakin terhadap suatu kosakata atau terjemahan, sampaikan ketidakpastian.
+
+## Aturan Bahasa Sunda
+
+- Perhatikan konteks sosial.
+- Jangan menganggap semua kalimat memiliki satu terjemahan mutlak.
+- Jelaskan variasi.
+- Bedakan loma dan lemes.
+- Jangan menyamakan variasi dialek dengan kesalahan.
+- Berikan contoh alami.
+- Gunakan Bahasa Indonesia sebagai jembatan.
+- Berikan catatan ketika penggunaan bahasa perlu diverifikasi.
+
+# 18. KARAKTER DAN SYSTEM PROMPT BABATURAN
+
+Nama: **BABATURAN**.
+
+Identitas: Babaturan Diajar Basa Sunda.
+
+Makna: teman atau sahabat yang menemani siswa belajar Bahasa Sunda.
+
+Kepribadian:
+- Ramah.
+- Sabar.
+- Bersahabat.
+- Edukatif.
+- Tidak menghakimi.
+- Memotivasi.
+- Adaptif.
+- Menghargai budaya Sunda.
+
+Prinsip komunikasi:
+
+1. Jangan membuat siswa takut salah.
+2. Apresiasi keberanian mencoba Bahasa Sunda.
+3. Sesuaikan penjelasan dengan kemampuan pengguna.
+4. Jangan selalu memberikan jawaban langsung.
+5. Ajukan pertanyaan pemantik.
+6. Berikan petunjuk sebelum solusi lengkap.
+7. Sesuaikan intensitas Bahasa Sunda dengan perkembangan siswa.
+8. Terima input Bahasa Indonesia maupun Inggris.
+9. Koreksi dengan suportif.
+10. Jangan mengarang informasi budaya atau linguistik.
+
+Contoh:
+
+Siswa:
+"Abdi teu tiasa basa Sunda."
+
+BABATURAN:
+"Henteu kunanaon! Urang diajar babarengan, nya! 😊
+
+Teu kudu langsung lancar. Urang mimitian ku kecap-kecap sederhana heula.
+
+Hayu urang cobian:
+'Wilujeng enjing' hartina 'Selamat pagi'.
+
+Ayeuna, kumaha anjeun ngawalon lamun aya babaturan nyebut 'Wilujeng enjing'?"
+
+# 19. TEACHER DASHBOARD — RUANG GURU
+
+Guru dapat:
+- Membuat kelas.
+- Mengelola siswa.
+- Membuat kode akses.
+- Mengatur profil belajar.
+- Menambahkan materi.
+- Mengunggah CP, ATP, dan bahan ajar.
+- Membuat tugas.
+- Mengatur ketentuan penggunaan AI.
+- Mengatur ketentuan penggunaan translator.
+- Mengatur topik percakapan.
+- Membuat soal.
+- Mengatur rubrik.
+- Meninjau tulisan.
+- Melihat progres.
+- Melihat riwayat penerjemahan sesuai kebijakan privasi tugas.
+- Melihat hasil latihan.
+- Melihat kesulitan siswa.
+- Mengunduh laporan.
+
+Statistik:
+- Siswa aktif.
+- Penyelesaian materi.
+- Hasil latihan.
+- Perkembangan kosakata.
+- Aktivitas percakapan.
+- Penggunaan translator.
+- Hasil Draft 1 dan Draft 2.
+- Refleksi siswa.
+- Kemajuan kelas.
+
+Buat rekomendasi tindak lanjut berdasarkan data nyata.
+
+# 20. STUDENT DASHBOARD
+
+Tampilkan:
+- Sapaan personal.
+- Avatar.
+- Profil kemampuan.
+- XP dan level.
+- Progress.
+- Daily mission.
+- Rekomendasi belajar.
+- Modul terakhir.
+- Kosakata harian.
+- Tombol AI Tutor.
+- Tombol Translator.
+- Tombol Hayu Nyarita.
+- Achievement.
+- Learning streak.
+
+Navigasi:
+
+1. Beranda.
+2. Ngobrol AI.
+3. Translator.
+4. Hayu Nyarita.
+5. Belajar.
+6. Writing Lab.
+7. Budaya Sunda.
+8. Profil.
+
+Pastikan semua navigasi benar-benar berfungsi.
+
+# 21. DESAIN UI/UX
+
+Buat tampilan modern dan cocok untuk siswa SMA.
+
+Arah desain:
+- Modern educational technology.
+- Friendly AI companion.
+- Gamified learning.
+- Clean and intuitive.
+- Mobile-first.
+- Cultural identity.
+
+Inspirasi visual:
+- Motif batik Sunda.
+- Aksara Sunda.
+- Gunung dan alam Jawa Barat.
+- Angklung.
+- Kujang secara proporsional.
+- Nuansa budaya Sunda modern.
+
+Buat maskot BABATURAN yang bersahabat dan dapat berubah ekspresi.
+
+Perhatikan:
+- Desktop.
+- Tablet.
+- Smartphone.
+- Navigasi responsif.
+- Loading state.
+- Empty state.
+- Error state.
+- Success feedback.
+
+Halaman translator harus memiliki tampilan yang sederhana, cepat, dan intuitif seperti aplikasi penerjemah profesional.
+
+# 22. ARSITEKTUR TEKNIS DAN DATABASE
+
+Bangun sebagai responsive web application dan PWA apabila memungkinkan.
+
+Persyaratan:
+- Frontend dan backend terpisah.
+- Kode modular.
+- Komponen reusable.
+- Pengelolaan state yang konsisten.
+- Database.
+- Autentikasi.
+- Role-based access.
+- API key aman.
+- Error handling.
+- Validasi input.
+- Backup.
+- Optimasi koneksi internet.
+
+Minimal entitas database:
+
+- Users.
+- StudentProfiles.
+- Teachers.
+- Classes.
+- ClassMembers.
+- LearningModules.
+- LearningContents.
+- Conversations.
+- ConversationMessages.
+- TranslationRequests.
+- TranslationHistory.
+- TranslationProviders.
+- Vocabulary.
+- VocabularyFavorites.
+- TranslationGlossary.
+- Exercises.
+- ExerciseAttempts.
+- WritingAssignments.
+- WritingDrafts.
+- Rubrics.
+- RubricScores.
+- StudentReflections.
+- LearningProgress.
+- XPTransactions.
+- Achievements.
+- TeacherFeedback.
+
+Simpan data sesuai prinsip minimalisasi data.
+
+Sediakan mode offline terbatas untuk mengakses materi yang telah disimpan.
+
+# 23. PRIVASI, KEAMANAN, DAN ETIKA AI
+
+Karena pengguna merupakan peserta didik SMA dan sebagian mungkin masih di bawah usia dewasa:
+
+- Gunakan autentikasi yang aman.
+- Batasi data pribadi.
+- Jangan menampilkan percakapan pribadi siswa kepada siswa lain.
+- Terapkan kontrol akses guru.
+- Jangan menggunakan data pribadi tanpa tujuan yang jelas.
+- Sediakan mekanisme penghapusan data sesuai kebijakan.
+- Hindari leaderboard yang menampilkan informasi pribadi.
+- Jangan memberikan label negatif kepada siswa.
+- Jangan menjadikan AI satu-satunya penentu nilai.
+- Sediakan fitur pelaporan jawaban yang salah.
+- Berikan informasi jika jawaban berasal dari AI.
+- Jelaskan penggunaan teks untuk layanan penerjemahan eksternal.
+
+Untuk setiap provider translator:
+- Periksa kebijakan penyimpanan data.
+- Periksa penggunaan data untuk pelatihan model.
+- Gunakan koneksi aman.
+- Hindari mengirim data sensitif siswa.
+- Simpan API key hanya pada server.
+- Terapkan rate limiting dan pembatasan biaya.
+
+# 24. CONTOH USER JOURNEY
+
+1. Siswa membuka BABATURAN.
+2. Siswa melakukan onboarding.
+3. Siswa memilih kemampuan awal.
+4. Sistem memberikan asesmen diagnostik.
+5. BABATURAN membuat rekomendasi.
+6. Siswa menggunakan Translator untuk memahami kosakata.
+7. Siswa mempelajari struktur kalimat.
+8. Siswa mencoba percakapan sederhana.
+9. BABATURAN memberikan koreksi.
+10. Siswa menyelesaikan challenge.
+11. Siswa memperoleh XP.
+12. Siswa mengerjakan materi Bahasa Sunda SMA.
+13. Siswa mengerjakan Draft 1 secara mandiri.
+14. Setelah mengumpulkan Draft 1, siswa memperoleh akses AI sesuai kebijakan guru.
+15. Siswa menggunakan Translator dan AI Tutor untuk memahami masalah dalam tulisannya.
+16. Siswa membandingkan Draft 1 dengan versi alternatif BABATURAN.
+17. Siswa menyusun Draft 2.
+18. Kedua draft dinilai dengan rubrik yang sama.
+19. Siswa mengisi refleksi.
+20. Guru memantau perkembangan melalui dashboard.
+
+# 25. KRITERIA KEBERHASILAN
+
+Aplikasi dianggap berhasil apabila:
+
+1. Chatbot dapat merespons pertanyaan Bahasa Sunda dan Indonesia.
+2. Translator dapat menerjemahkan Sunda–Indonesia secara dua arah.
+3. Translator mendukung Inggris apabila provider tersedia dan hasil telah diuji.
+4. Translator memiliki penjelasan kontekstual.
+5. Riwayat terjemahan tersimpan.
+6. Hasil terjemahan dapat dipelajari menjadi kosakata.
+7. Sistem dapat melakukan roleplay.
+8. Materi dan progres tersimpan.
+9. Gamifikasi berfungsi.
+10. Writing Lab menyimpan Draft 1 dan Draft 2 secara terpisah.
+11. Siswa dapat membandingkan tulisannya dengan versi chatbot.
+12. Kedua draft dapat dinilai menggunakan rubrik yang sama.
+13. Siswa dapat menulis refleksi.
+14. Guru dapat mengelola tugas.
+15. Aplikasi responsif.
+16. API key terlindungi.
+17. Sistem tidak memalsukan data.
+18. Jawaban yang tidak dapat diverifikasi ditandai dengan jelas.
+
+Lakukan pengujian terhadap:
+- Siswa pemula.
+- Siswa yang memahami tetapi belum berani berbicara.
+- Siswa yang sudah lancar.
+- Siswa yang mempelajari undak-usuk basa.
+- Siswa yang menggunakan translator.
+- Siswa yang menulis teks.
+- Guru yang mengelola tugas.
+
+# 26. IMPLEMENTATION STRATEGY
+
+**Tahap 1 — Core Platform**
+- Landing page.
+- Onboarding.
+- Diagnostic assessment.
+- Student dashboard.
+- AI tutor.
+- Translator Sunda–Indonesia.
+- Vocabulary learning.
+- XP dan progress tracking.
+
+**Tahap 2 — Translation and Advanced Learning**
+- Sunda–English translation.
+- Contextual translation.
+- Word-by-word explanation.
+- Translation glossary.
+- Translation history.
+- Roleplay.
+- Undak-Usuk Battle.
+- Writing Lab.
+
+**Tahap 3 — Teacher Integration**
+- Teacher dashboard.
+- Class management.
+- Assignment management.
+- Draft comparison.
+- Rubric assessment.
+- Student reflection.
+- Progress analytics.
+- Report export.
+
+**Tahap 4 — Cultural and Advanced Features**
+- Aksara Sunda Corner.
+- Cultural Explorer.
+- Voice conversation.
+- Advanced gamification.
+- Adaptive learning.
+- PWA.
+- Offline learning.
+- Additional translation providers.
+
+Jika seluruh tahapan dapat dikerjakan sekaligus dengan baik, implementasikan semuanya. Jangan mengorbankan fungsionalitas inti demi banyaknya fitur.
+
+# 27. OUTPUT YANG HARUS DIHASILKAN
+
+Bangun:
+
+1. Aplikasi web BABATURAN.
+2. Landing page.
+3. Student dashboard.
+4. Teacher dashboard.
+5. AI chatbot.
+6. Multilingual translator.
+7. Integrasi Google Cloud Translation API apabila dikonfigurasi.
+8. Integrasi SundaDigi apabila API atau izin resmi tersedia.
+9. Fallback translator.
+10. Vocabulary learning.
+11. Roleplay conversation.
+12. Undak-Usuk Battle.
+13. Writing Lab.
+14. Draft 1 dan Draft 2 comparison.
+15. Rubric assessment.
+16. Student reflection.
+17. Gamification.
+18. Curriculum Learning Hub.
+19. Aksara Sunda Corner.
+20. Cultural Explorer.
+21. Database dan autentikasi apabila lingkungan mendukung.
+22. Demo mode.
+23. Dokumentasi konfigurasi API.
+24. Panduan instalasi.
+25. Dokumentasi struktur proyek.
+26. Daftar fitur yang sudah berfungsi dan fitur yang masih membutuhkan konfigurasi.
+
+Jangan membuat tombol yang terlihat aktif tetapi tidak bekerja.
+
+Jangan menyajikan data demo sebagai data nyata.
+
+Apabila fitur belum dapat dijalankan karena memerlukan API key atau izin provider, jelaskan secara transparan.
+
+---
+
+# 28. FINAL CREATIVE DIRECTION
+
+Bangun BABATURAN sebagai perpaduan antara:
+
+- Duolingo: pengalaman belajar bertahap dan gamifikasi.
+- Google Translate: kemudahan menerjemahkan.
+- AI Chatbot: pendamping belajar yang personal.
+- Conversation Simulator: ruang aman berlatih berbicara.
+- AI Writing Lab: ruang mengembangkan kemampuan menulis secara mandiri.
+- Cultural Learning Platform: ruang mengenal dan melestarikan budaya Sunda.
+
+Namun, jangan sekadar meniru aplikasi tersebut. Bangun pengalaman yang khas untuk Bahasa Sunda dan kebutuhan siswa SMA di lingkungan multibahasa seperti Bekasi.
+
+Buat siswa yang awalnya mengatakan:
+
+"Abdi teu tiasa basa Sunda."
+
+Menjadi siswa yang berani mengatakan:
+
+"Hayu, urang nyarios basa Sunda!"
+
+BABATURAN bukan hanya membantu siswa menerjemahkan kata, melainkan membantu mereka memahami makna, belajar dari kesalahan, menyusun kalimat, berkomunikasi, mengembangkan tulisan, dan menghargai budaya Sunda.
+
+**BABATURAN — Babaturan Diajar Basa Sunda.**
+
+Tagline:
+
+**"Diajar, Tarjamahkeun, Wani Nyarita, Ngamumule Basa Sunda."**

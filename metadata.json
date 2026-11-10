@@ -1,0 +1,6 @@
+{
+  "name": "BABATURAN — Babaturan Diajar Basa Sunda",
+  "description": "Ekosistem pembelajaran Bahasa Sunda berbasis AI untuk siswa SMA: Multi-Engine Contextual Translator dengan Perbandingan Terjemahan, 5-Stage Independent Writing Lab, AI Tutor, Simulasi Percakapan Hayu Nyarita, Undak-Usuk Battle, Aksara Sunda, dan Ruang Guru.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
